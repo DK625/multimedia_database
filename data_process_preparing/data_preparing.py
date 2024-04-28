@@ -27,4 +27,3 @@ def preprocess_images():
 ROOT_PATH = os.path.dirname(__file__)
 raw_data_folder = os.path.join(ROOT_PATH, 'raw_data')
 preprocessed_images = os.path.join(ROOT_PATH, 'preprocessed_images')
-# preprocess_images()
