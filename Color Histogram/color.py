@@ -11,7 +11,7 @@ from tqdm import tqdm
 import csv
 import numpy as np
 
-path_dataset= r"image"
+path_dataset= r"D:\\multimedia_database\data_process_preparing\\preprocessed_images"
 # data clean là thư mục , trong ddoscos nhiều thư mục con
 dir = path_dataset
 datadir = path_dataset
