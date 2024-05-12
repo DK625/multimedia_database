@@ -15,8 +15,8 @@ import os
 
 # output.save(outp)
 
-input_image_folder = 'D:\\workspace\\multimedia_database\\data_process_preparing\\preprocessed_images'
-output_image_folder = 'D:\\workspace\\multimedia_database\\data_process_preparing\\delete_background_images'
+input_image_folder = 'D:\\workspace\\multimedia_database\\data_process_preparing\\preprocessed_images\\waterfall_mountains'
+output_image_folder = 'D:\\workspace\\multimedia_database\\data_process_preparing\\delete_background_images\\waterfall_mountains'
 
 # Duyệt qua tất cả các thư mục con trong thư mục process_image
 for root, dirs, files in os.walk(input_image_folder):
