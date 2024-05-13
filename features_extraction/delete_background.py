@@ -13,7 +13,7 @@ import os
 # # Convert the output image to RGB mode
 # output = output.convert("RGB")
 
-# output.save(outp)
+# output.save(outp
 
 input_image_folder = 'D:\\workspace\\multimedia_database\\data_process_preparing\\preprocessed_images\\waterfall_mountains'
 output_image_folder = 'D:\\workspace\\multimedia_database\\data_process_preparing\\delete_background_images\\waterfall_mountains'
