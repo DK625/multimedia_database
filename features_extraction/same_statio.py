@@ -2,8 +2,8 @@ import cv2
 import os
 import numpy as np
 
-input_folder = 'D:\\workspace\\multimedia_database\\data_process_preparing\\delete_background_images\\waterfall_mountains'
-output_folder = 'D:\\workspace\\multimedia_database\\data_process_preparing\\same_statio\\waterfall_mountains'
+input_folder = 'D:\\workspace\\multimedia_database\\data_process_preparing\\delete_background_images\\desert_mountains'
+output_folder = 'D:\\workspace\\multimedia_database\\data_process_preparing\\same_statio\\desert_mountains'
 target_size = (300, 300)  # Kích thước mong muốn của vật thể
 
 # Lặp qua tất cả các tệp tin trong thư mục đầu vào
