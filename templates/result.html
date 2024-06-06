@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Uploaded Image</h1>
+    <img src="{{ url_for('static', filename='uploads/' + uploaded_image) }}" alt="Uploaded Image" style="max-width: 500px;">
+
+    <h1>Nearest Images</h1>
+    {% for img in nearest_images %}
+        <img src="{{ url_for('static', filename='rock_mountains/' + img) }}" alt="Nearest Image" style="max-width: 500px;">
+    {% endfor %}
+
+    <h1>Upload Another Image</h1>
+    <form action="{{ url_for('index') }}" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>

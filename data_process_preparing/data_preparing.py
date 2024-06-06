@@ -23,9 +23,6 @@ def resize_image(image_path, target_size=(500, 500)):
 def preprocess_image(image_path):
     image_resized = resize_image(image_path)
     image_deleted_background = remove(image_resized)
-    # # only resize
-    # image = cv2.imread(image_path)
-    # resized_image = cv2.resize(image, target_size)
     return image_deleted_background
 
 
@@ -42,6 +39,6 @@ def preprocess_images():
 ROOT_PATH = os.path.dirname(__file__)
 raw_data_folder = os.path.join(ROOT_PATH, 'raw_data')
 preprocessed_images = os.path.join(ROOT_PATH, 'delete_background_images')
-preprocess_images()
+# preprocess_images()
 
 # python3 data_process_preparing/data_preparing.py
