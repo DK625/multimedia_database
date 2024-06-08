@@ -37,8 +37,8 @@ def preprocess_images():
 
 
 ROOT_PATH = os.path.dirname(__file__)
-raw_data_folder = os.path.join(ROOT_PATH, 'raw_data')
-preprocessed_images = os.path.join(ROOT_PATH, 'delete_background_images')
+raw_data_folder = os.path.join(ROOT_PATH, 'raw_data', 'new')
+preprocessed_images = os.path.join(ROOT_PATH, 'delete_background_images', 'new')
 # preprocess_images()
 
 # python3 data_process_preparing/data_preparing.py

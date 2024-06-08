@@ -67,7 +67,7 @@ def find_images(img_path_res):
 
     # Tính khoảng cách và tìm 3 ảnh gần nhất
     distances = [np.linalg.norm(input_features - features) for features in data_file]
-    nearest_indices = np.argsort(distances)[:3]
+    nearest_indices = np.argsort(distances)[:4]
     # nearest_indices = np.argsort(distances)[1:4]  # Bỏ qua chỉ số 0
 
     # Hiển thị kết quả
