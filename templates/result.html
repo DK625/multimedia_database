@@ -10,7 +10,7 @@
 
     <h1>Nearest Images</h1>
     {% for img in nearest_images %}
-        <img src="{{ url_for('static', filename='rock_mountains/' + img) }}" alt="Nearest Image" style="max-width: 500px;">
+        <img src="{{ url_for('static', filename='raw_data/' + img) }}" alt="Nearest Image" style="max-width: 500px;">
     {% endfor %}
 
     <h1>Upload Another Image</h1>

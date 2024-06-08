@@ -9,7 +9,7 @@ from features_extraction.hsv import covert_image_rgb_to_hsv, my_calcHist
 from utils.utils import extract_number
 
 # Đường dẫn tới thư mục chứa ảnh
-path = os.path.join(output_folder, 'rock_mountains')
+path = os.path.join(output_folder, 'human')
 
 
 def convert_image_rgb_to_gray(img_rgb):
@@ -63,11 +63,11 @@ def find_images(img_path_res):
     input_features = np.concatenate((hist_hsv, hist_hog))
 
     # Đọc các đặc trưng đã lưu
-    data_file = np.load("concat_hog2_hsv2.npy.npy", allow_pickle=True)
+    data_file = np.load("concat_hog2_hsv2.npy", allow_pickle=True)
 
     # Tính khoảng cách và tìm 3 ảnh gần nhất
     distances = [np.linalg.norm(input_features - features) for features in data_file]
-    nearest_indices = np.argsort(distances)[:4]
+    nearest_indices = np.argsort(distances)[:3]
     # nearest_indices = np.argsort(distances)[1:4]  # Bỏ qua chỉ số 0
 
     # Hiển thị kết quả

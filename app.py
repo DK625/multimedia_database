@@ -12,10 +12,10 @@ from utils.utils import extract_number
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
-app.config['IMAGE_FOLDER'] = 'static/rock_mountains'
+app.config['IMAGE_FOLDER'] = 'static/human'
 
 # Đường dẫn tới thư mục chứa ảnh
-path = os.path.join(output_folder, 'rock_mountains')
+path = os.path.join(output_folder, 'human')
 
 
 def convert_image_rgb_to_gray(img_rgb):

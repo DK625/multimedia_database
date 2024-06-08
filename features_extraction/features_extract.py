@@ -21,3 +21,5 @@ def extract_features():
         array_concat_hog_hsv.append(concat_in_value)
     np.save("concat_hog2_hsv2.npy", array_concat_hog_hsv)
     print('created concat_hog2_hsv2.npy')
+
+# extract_features()
