@@ -6,7 +6,7 @@ from utils.utils import extract_number
 
 # path = 'D:\\workspace\\multimedia_database\\data_process_preparing\\delete_background_images\\rock_mountains'
 # path = output_folder  # same_statio folder
-path = os.path.join(output_folder, 'human')
+path = os.path.join(output_folder, 'rock_mountains')
 
 
 # hàm trích đặc trưng màu
@@ -86,7 +86,7 @@ def generate_hsv_file():
         data_HSV.append(embedding)
         print(i, end=' ')
     np.save("HSV.npy", data_HSV)
-    # print('created HSV.npy')
+    print('created HSV.npy')
 
 
 # generate_hsv_file()

@@ -4,7 +4,7 @@ import numpy as np
 from .data_preparing import preprocessed_images, ROOT_PATH
 
 input_folder = preprocessed_images
-output_folder = os.path.join(ROOT_PATH, 'same_statio')
+output_folder = os.path.join(ROOT_PATH, 'same_statio', 'new')
 target_size = (300, 300)  # Kích thước mong muốn của vật thể
 
 

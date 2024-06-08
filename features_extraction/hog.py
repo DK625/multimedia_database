@@ -8,7 +8,7 @@ from utils.utils import extract_number
 
 # path = 'D:\\workspace\\multimedia_database\\data_process_preparing\\delete_background_images\\rock_mountains'
 # path = output_folder  # same_statio folder
-path = os.path.join(output_folder, 'human')
+path = os.path.join(output_folder, 'rock_mountains')
 
 
 # ham trich xuat dac trung hinh dang HOG
@@ -67,12 +67,12 @@ def generate_hog_file():
         print(i, end=' ')
 
     np.save("hog2.npy", data_hog)
-    # print('created hog2.npy')
+    print('created hog2.npy')
 
 
 # generate_hog_file()
 # len(data_hog)
-# data_file_hog = np.load("hog2.npy", allow_pickle=True)
+# data_file_hog = np.load("hog.npy", allow_pickle=True)
 # len(data_file_hog)
 #
 # data_file_hsv = np.load("hsv.npy", allow_pickle=True)

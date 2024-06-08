@@ -4,12 +4,12 @@ from rembg import remove
 from PIL import Image
 
 
-# def delete_background(image):
-#     input_pil = Image.fromarray(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
-#     output_pil = remove(input_pil)
-#     output = cv2.cvtColor(np.array(output_pil), cv2.COLOR_RGB2BGR)
-#     return output
-#
+def delete_background(image):
+    input_pil = Image.fromarray(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+    output_pil = remove(input_pil)
+    output = cv2.cvtColor(np.array(output_pil), cv2.COLOR_RGB2BGR)
+    return output
+
 
 def resize_image(image_path, target_size=(500, 500)):
     image = cv2.imread(image_path)
@@ -22,11 +22,9 @@ def resize_image(image_path, target_size=(500, 500)):
 
 def preprocess_image(image_path):
     image_resized = resize_image(image_path)
-    # xóa thanhg nền đen
     image_deleted_background = remove(image_resized)
-    # return image_deleted_background
+    return image_deleted_background
 
-    return image_resized
 
 def preprocess_images():
     if not os.path.exists(preprocessed_images):
@@ -39,8 +37,8 @@ def preprocess_images():
 
 
 ROOT_PATH = os.path.dirname(__file__)
-raw_data_folder = os.path.join(ROOT_PATH, 'raw_data')
-preprocessed_images = os.path.join(ROOT_PATH, 'delete_background_images')
+raw_data_folder = os.path.join(ROOT_PATH, 'raw_data', 'new')
+preprocessed_images = os.path.join(ROOT_PATH, 'delete_background_images', 'new')
 # preprocess_images()
 
 # python3 data_process_preparing/data_preparing.py
